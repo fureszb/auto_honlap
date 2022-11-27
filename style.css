@@ -1,0 +1,137 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+    background-color: #0f1014;
+    color: #fcfcfe;
+}
+* {
+    box-sizing: border-box;
+}
+.gomb{
+    text-align: center;
+    padding: 10px;
+}
+.cim{
+    text-decoration: none;
+    text-align: start;
+    font-size: 27px;
+    padding: 0;
+    padding-left: 10px;
+}
+.gomb>button{
+    padding: 15px;
+    width: 33vh;
+    background-color:#0f1014 ;
+    color: #fcfcfe;
+    border: 1px solid #a1a0a3;
+    text-align: center;
+    transition: 0.5s;
+}
+button:hover{
+    width: 20%;
+    transition: 0.5s;
+}
+main{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+    grid-template-areas: "h n"
+    "a a"
+    "f f";
+}
+header{
+    grid-area: h;
+    padding-bottom: 0px;
+}
+article{
+    grid-area: a;
+}
+footer{
+    grid-area: f;
+}
+.menü>ul{
+    grid-area: n;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 100%;
+    gap: 50px;
+    padding-bottom: 0px;
+    padding-right: 20px;
+}
+img{
+    width: 100%;
+}
+.menü>ul>li{
+    list-style: none;
+    margin: 10px;
+    padding: 5px;
+    width: 100%;
+    border-radius: 12px;
+}
+.menü>ul>li>a{
+    color: #a1a0a3;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    padding: 10px;
+    text-decoration: underline;
+}
+p{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 22px;
+}
+.end{
+    text-decoration: none;
+}
+.linkek>ul{
+    grid-area: n;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 100%;
+    gap: 50px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+}
+.linkek>ul>li{
+    list-style: none;
+    margin: 10px;
+    padding: 5px;
+    width: 100%;
+    border-radius: 12px;
+    text-align: center;
+}
+.linkek>ul>li>a{
+    color: #a1a0a3;
+    text-align: center;
+    font-size: 3vh;
+    text-decoration: overline;
+   
+}
+    
+.linkek>ul>li>a:hover{
+    text-decoration: none;
+    color: #fcfcfe;
+}
+.menü>ul>li>a:hover{
+    color: #fcfcfe;
+}
+@media screen and (max-width: 400px)
+{
+    main
+    {
+        grid-template-areas: "h h"
+        "n n"
+    "a a"
+    "f f";
+    }
+}
